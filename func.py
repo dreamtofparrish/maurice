@@ -18,6 +18,6 @@ bot = tweepy.Client(
 def post_quote():
 	quotes = data["quotes"]
 	random_index = random.randint(0, len(quotes)-1)
-	quote = book_quotes[random_index]
+	quote = post_quote[random_index]
 	r = bot.create_tweet(text=quote)
 	return None
